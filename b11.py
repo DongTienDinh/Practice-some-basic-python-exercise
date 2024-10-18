@@ -1,0 +1,10 @@
+n= int (input ("nhập một dãy số nguyên: "))
+x= list()
+x.append(n)
+while n != -1:
+    n = int(input("nhập một dãy số nguyên: "))
+    x.append(n)
+x.pop(-1)
+x= sorted(x)
+print (f" Dãy số bạn mới nhập là {x[:]}")
+print (f"Vậy số lớn nhất và nhỏ nhất trong dãy số là :", x[len(x)-1]," và ",x[0])
